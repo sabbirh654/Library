@@ -94,9 +94,42 @@ body {
     background-color: #e11d48;
 }
 
+.common-button.form-submit {
+    width: 100px;
+    background-color: #0d9488;
+}
+
+.common-button.form-submit:hover {
+    background-color: #2dd4bf;
+}
+
+.common-button.form-submit:active {
+    background-color: #115e59;
+}
+
+.common-button.form-cancel {
+    width: 100px;
+    background-color: #e4e4e7;
+}
+
+.common-button.form-cancel:hover {
+    background-color: #f4f4f5;
+}
+
+.common-button.form-cancel:active {
+    background-color: #d4d4d8;
+}
+
+
+
 .bookList-button {
     display: flex;
     justify-content: center;
+}
+
+.form-dialog {
+    width: 40%;
+    margin: auto;
 }
 
 
@@ -108,30 +141,15 @@ label {
     display: block;
     font-size: 16px;
     margin-bottom: 4px;
-    color: rgba(29, 28, 28, 0.413);
+    color: #0c4a6e;
 }
 
 input[type="text"], input[type="tel"] {
     width: 75%;
-    border: 2px solid rgba(37, 36, 36, 0.228);
+    border: 2px solid #cbd5e1;
     border-radius: 2px;
     padding: 4px;
     margin-bottom: 16px;
-}
-
-form > button {
-    width: 40%;
-    padding: 12px;
-    background-color: rgba(25, 137, 235, 0.689);
-    color: whitesmoke;
-    font-weight: 600;
-    border: none;
-    border-radius: 2px;
-    margin-top: 10px;
-}
-
-form > button:hover {
-    background-color:  rgb(8, 70, 132);
 }
 
 .card {

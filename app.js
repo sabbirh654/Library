@@ -64,3 +64,19 @@ function createBookCard(book) {
 }
 
 populateBooks();
+
+function addBookButtonEventHandler() {
+    const dialog = document.querySelector('.form-dialog');
+    dialog.showModal();
+}
+
+function cancelFormButtonEventHandler() {
+    const dialog = document.querySelector('.form-dialog');
+    dialog.close();
+}
+
+const addBookButton = document.querySelector('.common-button.addButton')
+addBookButton.addEventListener('click', addBookButtonEventHandler);
+
+const cancelFormButton = document.querySelector('.common-button.form-cancel');
+cancelFormButton.addEventListener('click', cancelFormButtonEventHandler);
