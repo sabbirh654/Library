@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,50 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="./app.js" defer></script>
 </head>
+
 <body>
-    <div class="header">
-
-    </div>
-    <div class="add-book-section">
-        <form action="#" method="get">
-            <div class="book-title">
-                <label for="title">TITLE</label>
-                <input type="text" name="bookTitle" id="title" required>
+    <div class="header"></div>
+    <div class="main">
+        <div class="bookList">
+            <div class="card">
+                <p>Name : Nabiye Rahmat</p>
+                <p>Author : Sayeed ali nadwi</p>
+                <p>Pages : 800</p>
+                <p>Status : not read</p>
+                <div class="bookList-button">
+                    <button class="common-button changeButton">Change status</button>
+                    <button class="common-button removeButton">Remove</button>
+                </div>
             </div>
-            <div class="book-author">
-                <label for="author">AUTHOR</label>
-                <input type="text" name="bookAuthor" id="author" required>
-            </div>
-            <div class="book-pages">
-                <label for="pages">PAGES</label>
-                <input type="tel" name="bookPages" id="pages" required>
-            </div>
-            <div class="book-read-status">
-                <label for="status">READ STATUS</label>
-                <input type="text" name="bookReadStatus" id="status" required>
-            </div>
-            <button type="submit">ADD BOOK</button>
-        </form>
-    </div>
-    <div class="show-book-section">
-
-    </div>
-    <div class="footer">
-
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+        <div class="addBook">
+            <button class="common-button addButton">ADD BOOK</button>
+        </div>
     </div>
 </body>
+
 </html>
+
+<!-- <div class="add-book-section">
+    <form action="#" method="get">
+        <div class="book-title">
+            <label for="title">TITLE</label>
+            <input type="text" name="bookTitle" id="title" required>
+        </div>
+        <div class="book-author">
+            <label for="author">AUTHOR</label>
+            <input type="text" name="bookAuthor" id="author" required>
+        </div>
+        <div class="book-pages">
+            <label for="pages">PAGES</label>
+            <input type="tel" name="bookPages" id="pages" required>
+        </div>
+        <div class="book-read-status">
+            <label for="status">READ STATUS</label>
+            <input type="text" name="bookReadStatus" id="status" required>
+        </div>
+        <button type="submit" class="addBookButton">ADD BOOK</button>
+    </form>
+</div> -->

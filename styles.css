@@ -5,35 +5,98 @@
 }
 
 :root{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
     font-size: 12px;
+    font-weight: bold;
     line-height: 1.5rem;
+
+    --header-height: 15vh;
 }
 
 body {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 70px 500px 70px;
+    grid-template-rows: var(--header-height) 
+                        calc(100vh - var(--header-height)) 
 }
 
 .header {
-    grid-column: 1/3;
+    grid-row: 1;
 }
 
-.footer {
-    grid-column: 1/3;
-    grid-row: 3;
-}
-
-.add-book-section {
-    grid-column: 1;
+.main {
     grid-row: 2;
-    background-color: #e3dada2d;
+    display: grid;
+    grid-template-rows: auto 20%;
 }
 
-.show-book-section {
-    grid-column: 2;
+.main .bookList {
+    background-color:#ecfccb;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 75ch));
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 32px;
+}
+
+.main .addBook {
     grid-row: 2;
+    justify-self: center;
+    padding: 16px;
+}
+
+.common-button {
+    width: 200px;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #27272a;
+}
+
+.common-button.addButton {
+    background-color: #a3e635;
+}
+
+.common-button.addButton:hover {
+    background-color: #bef264
+}
+
+.common-button.addButton:active {
+    background-color: #84cc16;
+}
+
+.common-button.removeButton {
+    width: 150px;
+    background-color: #f43f5e;
+}
+
+.common-button.changeButton {
+    width: 150px;
+    background-color: #22c55e;
+    margin-right: 16px;
+}
+
+.common-button.changeButton:hover {
+    background-color: #86efac;
+}
+
+.common-button.changeButton:active {
+    background-color: #16a34a;
+}
+
+.common-button.removeButton:hover {
+    background-color: #fda4af;
+}
+
+.common-button.removeButton:active {
+    background-color: #e11d48;
+}
+
+.bookList-button {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -45,7 +108,7 @@ label {
     display: block;
     font-size: 16px;
     margin-bottom: 4px;
-    color: rgba(29, 28, 28, 0.413);;
+    color: rgba(29, 28, 28, 0.413);
 }
 
 input[type="text"], input[type="tel"] {
@@ -56,7 +119,7 @@ input[type="text"], input[type="tel"] {
     margin-bottom: 16px;
 }
 
-button {
+form > button {
     width: 40%;
     padding: 12px;
     background-color: rgba(25, 137, 235, 0.689);
@@ -67,6 +130,18 @@ button {
     margin-top: 10px;
 }
 
-button:hover {
+form > button:hover {
     background-color:  rgb(8, 70, 132);
+}
+
+.card {
+    height: 250px;
+    border: 2px solid #4ade80;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 16px;
+}
+
+p {
+    margin: 16px;
 }
