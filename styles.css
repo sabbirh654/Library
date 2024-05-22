@@ -150,6 +150,12 @@ input[type="text"], input[type="tel"] {
     border-radius: 2px;
     padding: 4px;
     margin-bottom: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+input[type="checkbox"]:focus {
+    border: none;
 }
 
 .card {
@@ -162,4 +168,12 @@ input[type="text"], input[type="tel"] {
 
 p {
     margin: 16px;
+}
+
+.book-read-status label {
+    display: inline;
+}
+
+.book-read-status {
+    margin-bottom: 8px;
 }

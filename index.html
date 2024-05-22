@@ -20,7 +20,7 @@
     </div>
 
     <dialog class="form-dialog">
-        <form action="#" method="get">
+        <form action="#" method="get" class="add-book-form">
             <div class="book-title">
                 <label for="title">TITLE</label>
                 <input type="text" name="bookTitle" id="title" required>
@@ -34,8 +34,8 @@
                 <input type="tel" name="bookPages" id="pages" required>
             </div>
             <div class="book-read-status">
-                <label for="status">READ STATUS</label>
-                <input type="text" name="bookReadStatus" id="status" required>
+                <label for="status">READ THE BOOK?</label>
+                <input type="checkbox" name="bookReadStatus" value="reading" id="status">
             </div>
             <button type="submit" class="common-button form-submit">Submit</button>
             <button class="common-button form-cancel">Cancel</button>
@@ -44,25 +44,3 @@
 </body>
 
 </html>
-
-<!-- <div class="add-book-section">
-    <form action="#" method="get">
-        <div class="book-title">
-            <label for="title">TITLE</label>
-            <input type="text" name="bookTitle" id="title" required>
-        </div>
-        <div class="book-author">
-            <label for="author">AUTHOR</label>
-            <input type="text" name="bookAuthor" id="author" required>
-        </div>
-        <div class="book-pages">
-            <label for="pages">PAGES</label>
-            <input type="tel" name="bookPages" id="pages" required>
-        </div>
-        <div class="book-read-status">
-            <label for="status">READ STATUS</label>
-            <input type="text" name="bookReadStatus" id="status" required>
-        </div>
-        <button type="submit" class="addBookButton">ADD BOOK</button>
-    </form>
-</div> -->
